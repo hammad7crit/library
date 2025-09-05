@@ -2,17 +2,36 @@ let addBtn = document.querySelector("button");
 let bookTitle = document.querySelector("#title");
 let bookAuthor = document.querySelector("#author");
 let bookPages = document.querySelector("#pages");
-let checkBox = document.querySelector("#checkbox")
+let checkBox = document.querySelector("#checkbox");
+let booksContainer = document.querySelector(".books-container");
 
 
 
-addBtn.addEventListener("click", addBookToLibrary())
+addBtn.addEventListener("click", handleAddBook);
 
 
-
-
-
-
+function handleAddBook() {
+    addBookToLibrary();
+    let bookDiv = document.createElement("div");
+    bookDiv.classList.add("book")
+    booksContainer.appendChild(bookDiv);
+    let bookTitleElement = document.createElement("p");
+    bookTitleElement.textContent = bookTitle.value;
+    let bookAuthorElement = document.createElement("p");
+    bookAuthorElement.textContent = bookAuthor.value;
+    let bookPagesElement = document.createElement("p");
+    bookPagesElement.textContent = bookPages.value;
+    let bookReadElement = document.createElement("p");
+    if (checkBox.checked) {
+        bookReadElement.textContent = "Read";
+    } else {
+        bookReadElement.textContent = "Not Read";
+    }
+    bookDiv.appendChild(bookTitleElement);
+    bookDiv.appendChild(bookAuthorElement);
+    bookDiv.appendChild(bookPagesElement);
+    bookDiv.appendChild(bookReadElement);
+}
 
 const myLibrary = [];
 

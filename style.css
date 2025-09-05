@@ -38,4 +38,11 @@ button:hover {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem   ;
+}
+
+.book {
+    border: 2px solid black;
+    width: 200px;
+    height: 300px;
 }
