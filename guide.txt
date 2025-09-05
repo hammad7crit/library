@@ -1,0 +1,33 @@
+Data (JavaScript side)
+
+Make a Book constructor.
+
+Store all books in an array (myLibrary).
+
+Write a function (addBookToLibrary) that creates a book (with a unique id) and pushes it into the array.
+
+Display (UI side)
+
+Write a function that loops through myLibrary and shows each book on the page (as cards or in a table).
+
+Keep data logic (array) separate from display logic (DOM).
+
+Form to Add Books
+
+Add a “New Book” button.
+
+Clicking it shows a form (modal, sidebar, or inline) where user enters book details (title, author, pages, read status).
+
+Use event.preventDefault() so the form doesn’t refresh the page.
+
+When submitted, create the book and add it to the library.
+
+Book Actions
+
+Each displayed book has:
+
+A Remove button → deletes it from the library.
+
+A Toggle Read button → flips its read status using a prototype method.
+
+👉 In short: Build a small library app where books live in an array, show up on the page, can be added with a form, removed, and toggled between read/unread.

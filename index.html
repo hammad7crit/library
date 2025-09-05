@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1 class="main-heading">My Library</h1>
+    <div class="container">
+        <button>Add a book</button>
+        <div>
+            <form action="">
+                <div>
+                    <label for="title">Title of the book</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div>
+                    <label for="author">Author of the book</label>
+                    <input type="text" name="author" id="author">
+                </div>
+                <div>
+                    <label for="pages">Number of pages</label>
+                    <input type="text" name="pages" id="pages" min="1" max="500">
+                </div>
+                <label for="checkbox">Read the book</label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+            </form>
+        </div>
+    </div>
+
+    <div class="books-container">
+        <!-- js does the work here -->
+    </div>
+    <script src="main.js"></script>
+</body>
